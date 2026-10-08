@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "stats-mcp": {
+      "command": "python",
+      "args": ["/absolute/path/to/stats-mcp/server.py"],
+      "env": {
+        "STATS_MCP_DIR": "/optional/override/path (defaults to the script's own folder)"
+      }
+    }
+  }
+}

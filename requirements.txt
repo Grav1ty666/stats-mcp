@@ -1,0 +1,8 @@
+pandas>=1.5
+numpy>=1.23
+scipy>=1.9
+statsmodels>=0.13
+scikit_posthocs>=0.7
+openpyxl>=3.0
+# IMPORTANT: FastMCP's API changed in mcp>=2.0. Pin to v1.x for this server.
+mcp<2
