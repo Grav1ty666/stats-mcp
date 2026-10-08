@@ -83,6 +83,24 @@ Python venv works well).
 > "Using `sample_field_trial.csv`, run a one-way ANOVA of `variety` on `yield`;
 > if significant, do Tukey HSD."
 
+## Use as a WorkBuddy Skill
+
+This repo is also a **WorkBuddy skill**. To install it:
+
+1. Clone / copy this folder into your WorkBuddy skills directory, e.g.
+   `~/.workbuddy/skills/stats-mcp/` (the folder containing `SKILL.md`).
+2. Install dependencies: `pip install -r requirements.txt`.
+3. (Optional, for MCP mode) register the server and trust the connector:
+   ```bash
+   python scripts/install_mcp.py
+   ```
+   Then, in WorkBuddy's connector management page, click **Trust** on
+   `stats-mcp`. After that the 9 tools are callable as MCP tools.
+
+If you skip the MCP setup, the skill still works via the bundled CLI
+(`scripts/stats_cli.py`) — no MCP configuration required. See `SKILL.md`
+for the intent → tool mapping and example invocations.
+
 ## License
 
 MIT — see [LICENSE](./LICENSE).
